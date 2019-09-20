@@ -38,12 +38,11 @@
     #1.1 Install anaconda Python 3.7
     ###############################################
 
-        mkdir ~/conda3.7 && cd ~/conda3.7
         wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
         bash Anaconda3-2019.03-Linux-x86_64.sh
         sudo echo "conda activate" >> ~/.bashrc
         source ~/.bashrc #!Then restart the window by close and opening it to make conda workable.
-
+        rm Anaconda3-2019.07-Linux-x86_64.sh
         #anaconda Python 2.7
             #mkdir $tools/conda3.7 && cd $tools/conda2.6
             #https://repo.anaconda.com/archive/Anaconda2-2019.07-Linux-x86_64.sh
