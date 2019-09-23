@@ -57,6 +57,7 @@
     
     conda install -c bioconda   fastqc \
                                 trimmomatic \
+                                flash \
                                 bwa \
                                 bowtie2 \
                                 gatk \
