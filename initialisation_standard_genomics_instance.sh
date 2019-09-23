@@ -66,9 +66,16 @@
                                 bamtools \
                                 bcftools \
                                 vcftools
-    
+
+                                # Trimmmomatic adatpers are under /home/ubuntu/anaconda3/share/trimmomatic-0.39-1/adapters 
+
     conda install -c r r
 
+    #GATK3.8 have to be installed separately
+                conda install -c conda-forge -c bioconda gatk
+                mkdir ~/Downloads & cd ~/Downloads
+                wget https://www.dropbox.com/s/ax3ayr516ila8mo/GenomeAnalysisTK-3.8-0-ge9d806836.tar.bz2
+                gatk3-register GenomeAnalysisTK-3.8-0-ge9d806836.tar.bz2
 
 
     # 1.3 Install single packages
@@ -88,7 +95,12 @@
                 conda install -c bioconda bowtie2
     #Genoma Analyser Tool Kits
             #GATK3.8
-                conda install -c bioconda gatk 
+                
+                conda install -c conda-forge -c bioconda gatk
+                mkdir ~/Downloads & cd ~/Downloads
+                wget https://www.dropbox.com/s/ax3ayr516ila8mo/GenomeAnalysisTK-3.8-0-ge9d806836.tar.bz2
+                gatk3-register GenomeAnalysisTK-3.8-0-ge9d806836.tar.bz2
+
             #GATK4
                 conda install -c bioconda gatk4
         #ANGSD
