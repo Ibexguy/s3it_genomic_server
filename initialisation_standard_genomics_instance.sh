@@ -22,6 +22,8 @@
         sudo apt-get install bzip2
     #Firefox
         sudo apt install firefox
+    #IGV
+        sudo apt get install igv 
 
     ##########################################################################################
     #1. CONDA INSTALLATIONS
